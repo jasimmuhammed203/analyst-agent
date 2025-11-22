@@ -2,6 +2,8 @@
 
 This project is the implementation of **Option 2: The Analyst Agent**, combining Python, Groq LLM, and n8n automation to build a fully automated pipeline that fetches, cleans, enriches, and stores structured AI startup news.
 
+Demo Video: https://youtu.be/LT1tpmYQk3A
+
 ---
 
 ## 1. Task Chosen
@@ -261,4 +263,5 @@ All validated structured entries are stored in:
 output/ai_startup_news.csv
 
 This file continuously grows as new batches of news are processed every 5 minutes through n8n.
+
 
