@@ -40,10 +40,16 @@ analyst-agent/
 ├── output/
 │   └── ai_startup_news.csv    ← Final enriched dataset (auto-updated)
 │
+├── assets/                    ← Screenshots for README
+│   ├── n8n_workflow.png       ← Workflow graph showing Trigger + Execute nodes
+│   ├── n8n_logs.png  ← Execution history (runs every 5 minutes)
+│   ├── csv_file_screenshot.png         ← Screenshot of ai_startup_news.csv content
+│   └── terminal_log.png         ← Terminal running python -m src.main
+│
 ├── requirements.txt           ← Python dependencies
 ├── README.md                  ← Documentation
 ├── .gitignore                 ← Files excluded from versioning
-└── workflow.json              ← Exported n8n workflow (if included)
+└── workflow.json              ← Exported n8n workflow (recommended)
 ```
 
 The system works as an automated analyst pipeline that periodically collects AI-startup-related news, processes it through multiple quality stages, and stores the cleaned information in a machine-friendly dataset.
@@ -255,3 +261,4 @@ All validated structured entries are stored in:
 output/ai_startup_news.csv
 
 This file continuously grows as new batches of news are processed every 5 minutes through n8n.
+
